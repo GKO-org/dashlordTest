@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: init
-        uses: "SocialGouv/dashlord-actions/init@main"
+        uses: "GKO-org/dashlord-actions/init@main"
         with:
           url: ${{ github.event.inputs.url }}
 
@@ -60,7 +60,7 @@ jobs:
       - name: Déclaration a11y
         continue-on-error: true
         timeout-minutes: 10
-        uses: "socialgouv/dashlord-actions/declaration-a11y@v1"
+        uses: "GKO-org/dashlord-actions/declaration-a11y@v1"
         if: ${{ matrix.sites.tools['declaration-a11y'] }}
         with:
           url: ${{ matrix.sites.url }}
@@ -91,7 +91,7 @@ jobs:
         if: ${{ matrix.sites.tools.lighthouse }}
         continue-on-error: true
         timeout-minutes: 20
-        uses: SocialGouv/dashlord-actions/lhci@v1
+        uses: GKO-org/dashlord-actions/lhci@v1
         with:
           url: "${{ join(matrix.sites.subpages, ',') }}"
 
@@ -127,7 +127,7 @@ jobs:
       - name: Déclaration RGPD
         continue-on-error: true
         timeout-minutes: 10
-        uses: SocialGouv/dashlord-actions/declaration-rgpd@v1
+        uses: GKO-org/dashlord-actions/declaration-rgpd@v1
         if: ${{ matrix.sites.tools['declaration-rgpd'] }}
         with:
           thirdparties: ${{ steps.thirdparties.outputs.json }}
@@ -244,7 +244,7 @@ jobs:
           output: scans/codescanalerts.json
           
 
-      - uses: SocialGouv/dashlord-actions/save@main
+      - uses: GKO-org/dashlord-actions/save@main
         with:
           url: ${{ matrix.sites.url }}
 
