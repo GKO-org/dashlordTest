@@ -24,7 +24,4 @@ tools:
   budget_page: true
   betagouv: true
 urls:
-  - url: https://imagesdefense.gouv.fr
-  - url: https://immobilier-etat.gouv.fr
-  - url: https://impots.gouv.fr
-  - url: https://inao.gouv.fr
+  - url: https://cyber.gouv.fr
