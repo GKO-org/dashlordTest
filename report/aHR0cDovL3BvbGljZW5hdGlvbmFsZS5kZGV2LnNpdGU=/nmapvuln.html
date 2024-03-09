@@ -53,8 +53,8 @@
 <div class="jumbotron">
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln ain.gouv.fr</pre>
-<p class="lead">Sat Mar  9 12:49:33 2024 – Sat Mar  9 12:50:12 2024<br>1 hosts scanned.
+<pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln policenationale.ddev.site</pre>
+<p class="lead">Sat Mar  9 12:57:07 2024 – Sat Mar  9 12:57:17 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,8 +76,8 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>77.159.252.140</td>
-<td>ain.gouv.fr</td>
+<td>127.0.0.1</td>
+<td>policenationale.ddev.site</td>
 <td>2</td>
 <td>0</td>
 </tr></tbody>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#77-159-252-140"><h3 class="panel-title">77.159.252.140 - ain.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="77-159-252-140">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#127-0-0-1"><h3 class="panel-title">127.0.0.1 - policenationale.ddev.site</h3></div>
+<div class="panel-body collapse in" id="127-0-0-1">
 <h4>Hostnames</h4>
 <ul>
-<li>ain.gouv.fr (user)</li>
-<li>140.252.159.77.rev.sfr.net (PTR)</li>
+<li>policenationale.ddev.site (user)</li>
+<li>localhost (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -111,130 +111,68 @@
 </tr></thead>
 <tbody>
 <tr class="success">
-<td title="Port">80</td>
+<td title="Port">22</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">Apache</td>
-<td title="Version"></td>
-<td title="Extra Info"></td>
+<td title="Service">ssh</td>
+<td title="Product">OpenSSH</td>
+<td title="Version">8.9p1 Ubuntu 3ubuntu0.6</td>
+<td title="Extra Info">Ubuntu Linux; protocol 2.0</td>
 </tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
-<h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest, HTTPOptions: 
-    HTTP/1.1 403 Forbidden
-    date: Sat, 09 Mar 2024 12:49:48 GMT
-    server: Apache
-    cache-control: no-cache
-    content-type: text/html
-    age: 0
-    x-cache: Miss
-    connection: close
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
-    Request forbidden by administrative rules.
-    &lt;/body&gt;&lt;/html&gt;
-  GetRequest: 
-    HTTP/1.1 403 Forbidden
-    date: Sat, 09 Mar 2024 12:49:47 GMT
-    server: Apache
-    cache-control: no-cache
-    content-type: text/html
-    age: 0
-    x-cache: Miss
-    content-length: 94
-    keep-alive: timeout=5, max=100
-    connection: close
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
-    Request forbidden by administrative rules.
-    &lt;/body&gt;&lt;/html&gt;
-  RPCCheck, X11Probe: 
-    HTTP/1.0 400 Bad request
-    cache-control: no-cache
-    content-type: text/html
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
-    Your browser sent an invalid request.
-    &lt;/body&gt;&lt;/html&gt;
-  RTSPRequest: 
-    HTTP/1.1 400 Bad Request
-    date: Sat, 09 Mar 2024 12:49:48 GMT
-    server: Apache
-    content-length: 226
-    content-type: text/html; charset=iso-8859-1
-    connection: close
-    &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
-    &lt;html&gt;&lt;head&gt;
-    &lt;title&gt;400 Bad Request&lt;/title&gt;
-    &lt;/head&gt;&lt;body&gt;
-    &lt;h1&gt;Bad Request&lt;/h1&gt;
-    &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
-    &lt;/p&gt;
-    &lt;/body&gt;&lt;/html&gt;</pre>
-</td></tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openbsd:openssh:8.9p1">cpe:/a:openbsd:openssh:8.9p1</a></td></tr>
 <tr class="success">
-<td title="Port">443</td>
+<td title="Port">8084</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">https</td>
-<td title="Product">Apache</td>
+<td title="Service">rtsp</td>
+<td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Apache</pre>
-<h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest, GetRequest: 
-    HTTP/1.1 403 Forbidden
-    date: Sat, 09 Mar 2024 12:49:54 GMT
-    server: Apache
-    cache-control: no-cache
-    content-type: text/html
-    age: 0
-    x-cache: Miss
-    connection: close
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
-    Request forbidden by administrative rules.
-    &lt;/body&gt;&lt;/html&gt;
-  HTTPOptions: 
-    HTTP/1.1 403 Forbidden
-    date: Sat, 09 Mar 2024 12:49:54 GMT
-    server: Apache
-    cache-control: no-cache
-    content-type: text/html
-    age: 0
-    x-cache: Miss
-    content-length: 94
-    keep-alive: timeout=5, max=100
-    connection: close
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;
-    Request forbidden by administrative rules.
-    &lt;/body&gt;&lt;/html&gt;
-  RPCCheck, tor-versions: 
+  FourOhFourRequest: 
+    HTTP/1.0 500 Internal Server Error
+    Date: Sat, 09 Mar 2024 12:57:16 GMT
+    Server: Mono.WebServer.XSP/4.7.1.0 Linux
+    Connection: close
+    Connection: close
+    Content-Type: text/html; charset=us-ascii
+    Content-Length: 9169
+    &lt;?xml version="1.0" encoding="utf-8"?&gt;
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+    &lt;style type="text/css"&gt;
+    body { background-color: #FFFFFF; font-size: .75em; font-family: Verdana, Helvetica, Sans-Serif; margin: 0; padding: 0; color: #696969; }
+    a:link { color: #000000; text-decoration: underline; }
+    a:visited { color: #000000; }
+    a:hover { color: #000000; text-decoration: none; }
+    a:active { color: #12eb87; }
+    margin-bottom: 20px; line-height: 1.6em; }
+    font-size: 1.2em; margin-left: 20px; margin-top: 0px; }
+  GetRequest: 
     HTTP/1.0 400 Bad request
-    cache-control: no-cache
-    content-type: text/html
-    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;
-    Your browser sent an invalid request.
-    &lt;/body&gt;&lt;/html&gt;
-  RTSPRequest: 
-    HTTP/1.1 400 Bad Request
-    date: Sat, 09 Mar 2024 12:50:00 GMT
-    server: Apache
-    content-length: 226
-    content-type: text/html; charset=iso-8859-1
-    connection: close
-    &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
-    &lt;html&gt;&lt;head&gt;
-    &lt;title&gt;400 Bad Request&lt;/title&gt;
-    &lt;/head&gt;&lt;body&gt;
-    &lt;h1&gt;Bad Request&lt;/h1&gt;
-    &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
-    &lt;/p&gt;
-    &lt;/body&gt;&lt;/html&gt;</pre>
+    Date: Sat, 09 Mar 2024 12:57:13 GMT
+    Server: Mono.WebServer.XSP/4.7.1.0 Linux
+    Connection: close
+    Connection: close
+    Date: Sat, 09 Mar 2024 12:57:13 GMT
+    Content-Type: text/html; charset=utf-8
+    Content-Length: 4890
+    &lt;?xml version="1.0" encoding="utf-8"?&gt;
+    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;head&gt;
+    &lt;style type="text/css"&gt;
+    body { background-color: #FFFFFF; font-size: .75em; font-family: Verdana, Helvetica, Sans-Serif; margin: 0; padding: 0; color: #696969; }
+    a:link { color: #000000; text-decoration: underline; }
+    a:visited { color: #000000; }
+    a:hover { color: #000000; text-decoration: none; }
+    a:active { color: #12eb87; }
+    margin-bottom: 20px; line-height: 1.6em; }
+    font-size: 1.2em; margin-left: 20px; margin-top: 0px; }</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -254,21 +192,21 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>77.159.252.140 - ain.gouv.fr</td>
-<td>80</td>
+<td>127.0.0.1 - policenationale.ddev.site</td>
+<td>22</td>
 <td>tcp</td>
-<td>http</td>
-<td>Apache</td>
-<td></td>
-<td></td>
-<td></td>
+<td>ssh</td>
+<td>OpenSSH</td>
+<td>8.9p1 Ubuntu 3ubuntu0.6</td>
+<td>cpe:/a:openbsd:openssh:8.9p1</td>
+<td>Ubuntu Linux; protocol 2.0</td>
 </tr>
 <tr>
-<td>77.159.252.140 - ain.gouv.fr</td>
-<td>443</td>
+<td>127.0.0.1 - policenationale.ddev.site</td>
+<td>8084</td>
 <td>tcp</td>
-<td>https</td>
-<td>Apache</td>
+<td>rtsp</td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
