@@ -1,0 +1,92 @@
+# Nmap 7.92 scan initiated Sat Mar  9 12:57:07 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln policenationale.ddev.site
+WARNING: Service 127.0.0.1:8084 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
+Nmap scan report for policenationale.ddev.site (127.0.0.1)
+Host is up (0.0000080s latency).
+rDNS record for 127.0.0.1: localhost
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+8084/tcp open  rtsp
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 500 Internal Server Error
+|     Date: Sat, 09 Mar 2024 12:57:16 GMT
+|     Server: Mono.WebServer.XSP/4.7.1.0 Linux
+|     Connection: close
+|     Connection: close
+|     Content-Type: text/html; charset=us-ascii
+|     Content-Length: 9169
+|     <?xml version="1.0" encoding="utf-8"?>
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <style type="text/css">
+|     body { background-color: #FFFFFF; font-size: .75em; font-family: Verdana, Helvetica, Sans-Serif; margin: 0; padding: 0; color: #696969; }
+|     a:link { color: #000000; text-decoration: underline; }
+|     a:visited { color: #000000; }
+|     a:hover { color: #000000; text-decoration: none; }
+|     a:active { color: #12eb87; }
+|     margin-bottom: 20px; line-height: 1.6em; }
+|     font-size: 1.2em; margin-left: 20px; margin-top: 0px; }
+|   GetRequest: 
+|     HTTP/1.0 400 Bad request
+|     Date: Sat, 09 Mar 2024 12:57:13 GMT
+|     Server: Mono.WebServer.XSP/4.7.1.0 Linux
+|     Connection: close
+|     Connection: close
+|     Date: Sat, 09 Mar 2024 12:57:13 GMT
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 4890
+|     <?xml version="1.0" encoding="utf-8"?>
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <style type="text/css">
+|     body { background-color: #FFFFFF; font-size: .75em; font-family: Verdana, Helvetica, Sans-Serif; margin: 0; padding: 0; color: #696969; }
+|     a:link { color: #000000; text-decoration: underline; }
+|     a:visited { color: #000000; }
+|     a:hover { color: #000000; text-decoration: none; }
+|     a:active { color: #12eb87; }
+|     margin-bottom: 20px; line-height: 1.6em; }
+|_    font-size: 1.2em; margin-left: 20px; margin-top: 0px; }
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8084-TCP:V=7.92%I=7%D=3/9%Time=65EC5CA9%P=x86_64-alpine-linux-musl%
+SF:r(GetRequest,140E,"HTTP/1\.0\x20400\x20Bad\x20request\r\nDate:\x20Sat,\
+SF:x2009\x20Mar\x202024\x2012:57:13\x20GMT\r\nServer:\x20Mono\.WebServer\.
+SF:XSP/4\.7\.1\.0\x20Linux\r\nConnection:\x20close\r\nConnection:\x20close
+SF:\r\nDate:\x20Sat,\x2009\x20Mar\x202024\x2012:57:13\x20GMT\r\nContent-Ty
+SF:pe:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x204890\r\n\r\n<\
+SF:?xml\x20version=\"1\.0\"\x20encoding=\"utf-8\"\?>\n<!DOCTYPE\x20html\x2
+SF:0PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\x20\"ht
+SF:tp://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n<html\x20x
+SF:mlns=\"http://www\.w3\.org/1999/xhtml\">\n<head>\n<style\x20type=\"text
+SF:/css\">\nbody\x20{\x20background-color:\x20#FFFFFF;\x20font-size:\x20\.
+SF:75em;\x20font-family:\x20Verdana,\x20Helvetica,\x20Sans-Serif;\x20margi
+SF:n:\x200;\x20padding:\x200;\tcolor:\x20#696969;\x20}\na:link\x20{\x20col
+SF:or:\x20#000000;\x20text-decoration:\x20underline;\x20}\na:visited\x20{\
+SF:x20color:\x20#000000;\x20}\na:hover\x20{\x20color:\x20#000000;\x20text-
+SF:decoration:\x20none;\x20}\na:active\x20{\x20color:\x20#12eb87;\x20}\np,
+SF:\x20ul\x20{\tmargin-bottom:\x2020px;\x20line-height:\x201\.6em;\x20}\np
+SF:re\x20{\x20font-size:\x201\.2em;\tmargin-left:\x2020px;\x20margin-top:\
+SF:x200px;\x20}\nh1,\x20")%r(FourOhFourRequest,24AD,"HTTP/1\.0\x20500\x20I
+SF:nternal\x20Server\x20Error\r\nDate:\x20Sat,\x2009\x20Mar\x202024\x2012:
+SF:57:16\x20GMT\r\nServer:\x20Mono\.WebServer\.XSP/4\.7\.1\.0\x20Linux\r\n
+SF:Connection:\x20close\r\nConnection:\x20close\r\nContent-Type:\x20text/h
+SF:tml;\x20charset=us-ascii\r\nContent-Length:\x209169\r\n\r\n<\?xml\x20ve
+SF:rsion=\"1\.0\"\x20encoding=\"utf-8\"\?>\n<!DOCTYPE\x20html\x20PUBLIC\x2
+SF:0\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\x20\"http://www\.
+SF:w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n<html\x20xmlns=\"htt
+SF:p://www\.w3\.org/1999/xhtml\">\n<head>\n<style\x20type=\"text/css\">\nb
+SF:ody\x20{\x20background-color:\x20#FFFFFF;\x20font-size:\x20\.75em;\x20f
+SF:ont-family:\x20Verdana,\x20Helvetica,\x20Sans-Serif;\x20margin:\x200;\x
+SF:20padding:\x200;\tcolor:\x20#696969;\x20}\na:link\x20{\x20color:\x20#00
+SF:0000;\x20text-decoration:\x20underline;\x20}\na:visited\x20{\x20color:\
+SF:x20#000000;\x20}\na:hover\x20{\x20color:\x20#000000;\x20text-decoration
+SF::\x20none;\x20}\na:active\x20{\x20color:\x20#12eb87;\x20}\np,\x20ul\x20
+SF:{\tmargin-bottom:\x2020px;\x20line-height:\x201\.6em;\x20}\npre\x20{\x2
+SF:0font-size:\x201\.2em;\tmargin-left:\x2020px;\x20margin-top:\x200px;\x2
+SF:0}\nh1,\x20h2,\x20h3,\x20h4,\x20h5,\x20h6\x20{\x20fon");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar  9 12:57:17 2024 -- 1 IP address (1 host up) scanned in 10.59 seconds
