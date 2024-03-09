@@ -24,4 +24,4 @@ tools:
   budget_page: true
   betagouv: true
 urls:
-  - url: 1jeune1solution.gouv.fr
+  - url: https://1jeune1solution.gouv.fr
