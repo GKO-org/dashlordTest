@@ -1,11 +1,11 @@
 [
   {
     "404": null,
-    "url": "https://www.ain.gouv.fr",
+    "url": "https://ain.gouv.fr",
     "http": {
-      "url": "https://www.ain.gouv.fr",
+      "url": "https://ain.gouv.fr",
       "algorithm_version": 3,
-      "end_time": "Sat, 09 Mar 2024 12:27:43 GMT",
+      "end_time": "Sat, 09 Mar 2024 12:47:45 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -16,24 +16,24 @@
         "content-encoding": "gzip",
         "content-language": "fr-FR",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sat, 09 Mar 2024 12:27:33 GMT",
-        "expires": "Sat, 09 Mar 2024 10:27:34 GMT",
-        "last-modified": "Sat, 09 Mar 2024 12:27:34 GMT",
+        "date": "Sat, 09 Mar 2024 12:47:36 GMT",
+        "expires": "Sat, 09 Mar 2024 10:47:36 GMT",
+        "last-modified": "Sat, 09 Mar 2024 12:47:36 GMT",
         "pragma": "no-cache",
         "served-by": "www.ain.gouv.fr",
         "server": "Apache",
-        "set-cookie": "eZSESSID=0604j4tunvf84s1tvh9le6r7d4; path=/",
+        "set-cookie": "eZSESSID=eej757gaflf3db77ssn2sm3a61; path=/",
         "transfer-encoding": "chunked",
         "vary": "X-User-Hash,Accept-Encoding",
         "x-cache": "Miss"
       },
-      "scan_id": 48655162,
+      "scan_id": 48655450,
       "score": 0,
-      "start_time": "Sat, 09 Mar 2024 12:27:31 GMT",
+      "start_time": "Sat, 09 Mar 2024 12:47:32 GMT",
       "state": "FINISHED",
       "status_code": 200,
-      "tests_failed": 5,
-      "tests_passed": 6,
+      "tests_failed": 6,
+      "tests_passed": 5,
       "tests_quantity": 11,
       "details": {
         "content-security-policy": {
@@ -107,15 +107,16 @@
             "destination": "https://www.ain.gouv.fr/",
             "redirects": true,
             "route": [
+              "http://ain.gouv.fr/",
               "http://www.ain.gouv.fr/",
               "https://www.ain.gouv.fr/"
             ],
             "status_code": 200
           },
-          "pass": true,
-          "result": "redirection-to-https",
-          "score_description": "Initial redirection is to HTTPS on same host, final destination is HTTPS",
-          "score_modifier": 0
+          "pass": false,
+          "result": "redirection-not-to-https-on-initial-redirection",
+          "score_description": "Redirects to HTTPS eventually, but initial redirection is to another HTTP URL",
+          "score_modifier": -10
         },
         "referrer-policy": {
           "expectation": "referrer-policy-private",
@@ -193,7 +194,7 @@
     },
     "updownio": null,
     "nmap": {
-      "host": "www.ain.gouv.fr",
+      "host": "ain.gouv.fr",
       "protocol": "tcp",
       "closed_ports": "998",
       "open_ports": [
@@ -221,70 +222,70 @@
     "testssl": [
       {
         "id": "service",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "HTTP"
       },
       {
         "id": "pre_128cipher",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No 128 cipher limit bug"
       },
       {
         "id": "SSLv2",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "SSLv3",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "TLS1",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_1",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_2",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "TLS1_3",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "offered with final"
       },
       {
         "id": "ALPN",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "cipherlist_NULL",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -292,7 +293,7 @@
       },
       {
         "id": "cipherlist_aNULL",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -300,7 +301,7 @@
       },
       {
         "id": "cipherlist_EXPORT",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -308,7 +309,7 @@
       },
       {
         "id": "cipherlist_LOW",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -316,7 +317,7 @@
       },
       {
         "id": "cipherlist_3DES_IDEA",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-310",
@@ -324,7 +325,7 @@
       },
       {
         "id": "cipherlist_OBSOLETED",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-310",
@@ -332,469 +333,448 @@
       },
       {
         "id": "cipherlist_STRONG_NOFS",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "cipherlist_STRONG_FS",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "cipher_order-tls1_2",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "server"
       },
       {
         "id": "cipherorder_TLSv1_2",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "cipher_order",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "server"
       },
       {
         "id": "FS",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "FS_ciphers",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "FS_ECDHE_curves",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "prime256v1 secp384r1 secp521r1"
       },
       {
         "id": "TLS_extensions",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'extended master secret/#23'"
       },
       {
         "id": "TLS_session_ticket",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "no -- no lifetime advertised"
       },
       {
         "id": "SSL_sessionID_support",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "yes"
       },
       {
         "id": "sessionresumption_ticket",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "random"
       },
       {
         "id": "certificate_compression",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "none"
       },
       {
         "id": "clientAuth",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "none"
       },
       {
         "id": "cert_numbers",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "1"
       },
       {
         "id": "cert_signatureAlgorithm",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "SHA256 with RSA"
       },
       {
         "id": "cert_keySize",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "RSA 2048 bits (exponent is 65537)"
       },
       {
         "id": "cert_keyUsage",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "Digital Signature, Key Encipherment"
       },
       {
         "id": "cert_extKeyUsage",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLS Web Server Authentication"
       },
       {
         "id": "cert_serialNumber",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "C0913FEBC48D59818BCB15E38415C13C"
       },
       {
         "id": "cert_serialNumberLen",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "16"
       },
       {
         "id": "cert_fingerprintSHA1",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "06460FD466760692B537353DB5C3C6499C8C8379"
       },
       {
         "id": "cert_fingerprintSHA256",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "E67E064CA1AED1CB5268C4E455A963E9531817779600EF2C8A5C6C496C86D097"
       },
       {
         "id": "cert",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "www.ain.gouv.fr"
       },
       {
         "id": "cert_commonName_wo_SNI",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "default.phi67.zd-est.pref.gouv.fr"
       },
       {
         "id": "cert_subjectAltName",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "www.ain.gouv.fr ain.gouv.fr"
       },
       {
         "id": "cert_trust",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
-        "finding": "Ok via SAN and CN (SNI mandatory)"
+        "finding": "Ok via SAN (SNI mandatory)"
       },
       {
         "id": "cert_chain_of_trust",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "passed."
       },
       {
         "id": "cert_certificatePolicies_EV",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_expirationStatus",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "MEDIUM",
         "finding": "expires < 60 days (41)"
       },
       {
         "id": "cert_notBefore",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "2023-03-21 23:00"
       },
       {
         "id": "cert_notAfter",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "MEDIUM",
         "finding": "2024-04-19 21:59"
       },
       {
         "id": "cert_extlifeSpan",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "certificate has no extended life time according to browser forum"
       },
       {
         "id": "cert_eTLS",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "not present"
       },
       {
         "id": "cert_crlDistributionPoints",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "http://crl.certigna.fr/servicesca.crl http://crl.dhimyotis.com/servicesca.crl"
       },
       {
         "id": "cert_ocspURL",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "http://servicesca.ocsp.dhimyotis.com http://servicesca.ocsp.certigna.fr"
       },
       {
         "id": "OCSP_stapling",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "LOW",
         "finding": "not offered"
       },
       {
         "id": "cert_mustStapleExtension",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "--"
       },
       {
         "id": "DNS_CAArecord",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "LOW",
         "finding": "--"
       },
       {
         "id": "certificate_transparency",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "yes (certificate extension)"
       },
       {
         "id": "certs_countServer",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "2"
       },
       {
         "id": "certs_list_ordering_problem",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_caIssuers",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "Certigna Services CA (DHIMYOTIS from FR)"
       },
       {
         "id": "intermediate_cert <#1>",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "71E653BFBF5E72515B4099BBD5EC8872812B47C6EC1FA9ADD327E1C92C9EA16D"
       },
       {
         "id": "intermediate_cert_notBefore <#1>",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "2015-11-25 11:33"
       },
       {
         "id": "intermediate_cert_notAfter <#1>",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "2025-11-22 11:33"
       },
       {
         "id": "intermediate_cert_expiration <#1>",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "ok > 40 days"
       },
       {
         "id": "intermediate_cert_chain <#1>",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "Certigna Services CA <-- Certigna"
       },
       {
         "id": "intermediate_cert_badOCSP",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "intermediate certificate(s) is/are ok"
       },
       {
         "id": "HTTP_status_code",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
-        "finding": "200 OK ('/')"
+        "finding": "301 Moved Permanently ('/')"
       },
       {
         "id": "HTTP_clock_skew",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
-        "finding": "-2 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
-        "finding": "1709987372"
+        "finding": "1709988543"
       },
       {
         "id": "HTTP_headerAge",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "0 seconds"
       },
       {
         "id": "HSTS",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "LOW",
         "finding": "not offered"
       },
       {
         "id": "HPKP",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No support for HTTP Public Key Pinning"
       },
       {
         "id": "banner_server",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "Apache"
       },
       {
         "id": "banner_application",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No application banner found"
       },
       {
         "id": "cookie_count",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
-        "finding": "1 at '/'"
-      },
-      {
-        "id": "cookie_secure",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "0/1 at '/' marked as secure"
-      },
-      {
-        "id": "cookie_httponly",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "0/1 at '/' marked as HttpOnly"
+        "finding": "0 at '/' (30x detected, better try target URL of 30x)"
       },
       {
         "id": "Cache-Control",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
-        "finding": "must-revalidate, no-cache, private"
-      },
-      {
-        "id": "Pragma",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no-cache"
+        "finding": "max-age=1"
       },
       {
         "id": "banner_reverseproxy",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
@@ -802,7 +782,7 @@
       },
       {
         "id": "heartbleed",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-0160",
@@ -811,7 +791,7 @@
       },
       {
         "id": "CCS",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-0224",
@@ -820,7 +800,7 @@
       },
       {
         "id": "ticketbleed",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-9244",
@@ -829,7 +809,7 @@
       },
       {
         "id": "ROBOT",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
@@ -838,7 +818,7 @@
       },
       {
         "id": "secure_renego",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-310",
@@ -846,7 +826,7 @@
       },
       {
         "id": "secure_client_renego",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2011-1473",
@@ -855,7 +835,7 @@
       },
       {
         "id": "CRIME_TLS",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2012-4929",
@@ -864,16 +844,16 @@
       },
       {
         "id": "BREACH",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
-        "severity": "MEDIUM",
+        "severity": "OK",
         "cve": "CVE-2013-3587",
         "cwe": "CWE-310",
-        "finding": "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
+        "finding": "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
       },
       {
         "id": "POODLE_SSL",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-3566",
@@ -882,14 +862,14 @@
       },
       {
         "id": "fallback_SCSV",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "no protocol below TLS 1.2 offered"
       },
       {
         "id": "SWEET32",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-2183 CVE-2016-6329",
@@ -898,7 +878,7 @@
       },
       {
         "id": "FREAK",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-0204",
@@ -907,7 +887,7 @@
       },
       {
         "id": "DROWN",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-0800 CVE-2016-0703",
@@ -916,7 +896,7 @@
       },
       {
         "id": "DROWN_hint",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
@@ -925,7 +905,7 @@
       },
       {
         "id": "LOGJAM-common_primes",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "cve": "CVE-2015-4000",
@@ -934,7 +914,7 @@
       },
       {
         "id": "LOGJAM",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-4000",
@@ -943,7 +923,7 @@
       },
       {
         "id": "BEAST",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2011-3389",
@@ -952,7 +932,7 @@
       },
       {
         "id": "LUCKY13",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2013-0169",
@@ -961,7 +941,7 @@
       },
       {
         "id": "winshock",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-6321",
@@ -970,7 +950,7 @@
       },
       {
         "id": "RC4",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2013-2566 CVE-2015-2808",
@@ -979,332 +959,332 @@
       },
       {
         "id": "clientsimulation-android_60",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_70",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_81",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_90",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-android_X",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-android_11",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-android_12",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-chrome_79_win10",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-chrome_101_win10",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-firefox_66_win81",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-firefox_100_win10",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-ie_6_xp",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_8_win7",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_8_xp",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_11_win7",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-ie_11_win81",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-ie_11_winphone81",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_11_win10",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-edge_15_win10",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-edge_101_win10_21h2",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-safari_121_ios_122",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
       },
       {
         "id": "clientsimulation-safari_130_osx_10146",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
       },
       {
         "id": "clientsimulation-safari_154_osx_1231",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-java_7u25",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-java_8u161",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-java1102",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-java1703",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-go_1178",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-libressl_283",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
       },
       {
         "id": "clientsimulation-openssl_102e",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-openssl_110l",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-openssl_111d",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-openssl_303",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-apple_mail_16_0",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-thunderbird_91_9",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "rating_spec",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
       },
       {
         "id": "rating_doc",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
       },
       {
         "id": "protocol_support_score",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "100"
       },
       {
         "id": "protocol_support_score_weighted",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "30"
       },
       {
         "id": "key_exchange_score",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "90"
       },
       {
         "id": "key_exchange_score_weighted",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "27"
       },
       {
         "id": "cipher_strength_score",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "60"
       },
       {
         "id": "cipher_strength_score_weighted",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "24"
       },
       {
         "id": "final_score",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "81"
       },
       {
         "id": "overall_grade",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "OK",
         "finding": "A"
       },
       {
         "id": "grade_cap_reason_1",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
         "finding": "Grade capped to A. HSTS is not offered"
       },
       {
         "id": "scanTime",
-        "ip": "www.ain.gouv.fr/77.159.252.140",
+        "ip": "ain.gouv.fr/77.159.252.140",
         "port": "443",
         "severity": "INFO",
-        "finding": "103"
+        "finding": "55"
       }
     ],
     "thirdparties": null,
@@ -1313,10 +1293,12 @@
     "nuclei": [],
     "lhr": [
       {
-        "requestedUrl": "https://www.ain.gouv.fr/",
+        "requestedUrl": "https://ain.gouv.fr/",
         "finalUrl": "https://www.ain.gouv.fr/",
-        "fetchTime": "2024-03-09T12:27:15.006Z",
-        "runWarnings": [],
+        "fetchTime": "2024-03-09T12:47:16.403Z",
+        "runWarnings": [
+          "The page may not be loading as expected because your test URL (https://ain.gouv.fr/) was redirected to https://www.ain.gouv.fr/. Try testing the second URL directly."
+        ],
         "categories": {
           "performance": {
             "title": "Performance",
@@ -1326,7 +1308,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.6714481353759766
+            "score": 0.5713396072387695
           },
           "accessibility": {
             "title": "Accessibility",
@@ -1347,7 +1329,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 0.92
+            "score": 0.83
           },
           "seo": {
             "title": "SEO",
@@ -1378,53 +1360,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 11702,
+            "numericValue": 11554,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4554,
-                  "firstMeaningfulPaint": 4554,
-                  "largestContentfulPaint": 11915,
-                  "interactive": 11702,
-                  "speedIndex": 8508,
-                  "totalBlockingTime": 539,
-                  "maxPotentialFID": 393,
+                  "firstContentfulPaint": 4691,
+                  "firstMeaningfulPaint": 4691,
+                  "largestContentfulPaint": 12770,
+                  "interactive": 11554,
+                  "speedIndex": 7520,
+                  "totalBlockingTime": 204,
+                  "maxPotentialFID": 176,
                   "cumulativeLayoutShift": 0.0023296746148003472,
                   "cumulativeLayoutShiftMainFrame": 0.0023296746148003472,
                   "totalCumulativeLayoutShift": 0.0023296746148003472,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 127266303,
+                  "observedTimeOriginTs": 234778914,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 127266303,
-                  "observedFirstPaint": 2692,
-                  "observedFirstPaintTs": 129958523,
-                  "observedFirstContentfulPaint": 2692,
-                  "observedFirstContentfulPaintTs": 129958523,
-                  "observedFirstContentfulPaintAllFrames": 2692,
-                  "observedFirstContentfulPaintAllFramesTs": 129958523,
-                  "observedFirstMeaningfulPaint": 2692,
-                  "observedFirstMeaningfulPaintTs": 129958523,
-                  "observedLargestContentfulPaint": 3548,
-                  "observedLargestContentfulPaintTs": 130814358,
-                  "observedLargestContentfulPaintAllFrames": 3548,
-                  "observedLargestContentfulPaintAllFramesTs": 130814358,
-                  "observedTraceEnd": 5514,
-                  "observedTraceEndTs": 132780543,
-                  "observedLoad": 3207,
-                  "observedLoadTs": 130473059,
-                  "observedDomContentLoaded": 2714,
-                  "observedDomContentLoadedTs": 129979940,
+                  "observedNavigationStartTs": 234778914,
+                  "observedFirstPaint": 2469,
+                  "observedFirstPaintTs": 237247994,
+                  "observedFirstContentfulPaint": 2469,
+                  "observedFirstContentfulPaintTs": 237247994,
+                  "observedFirstContentfulPaintAllFrames": 2469,
+                  "observedFirstContentfulPaintAllFramesTs": 237247994,
+                  "observedFirstMeaningfulPaint": 2469,
+                  "observedFirstMeaningfulPaintTs": 237247994,
+                  "observedLargestContentfulPaint": 3298,
+                  "observedLargestContentfulPaintTs": 238076761,
+                  "observedLargestContentfulPaintAllFrames": 3298,
+                  "observedLargestContentfulPaintAllFramesTs": 238076761,
+                  "observedTraceEnd": 5321,
+                  "observedTraceEndTs": 240100028,
+                  "observedLoad": 3012,
+                  "observedLoadTs": 237791248,
+                  "observedDomContentLoaded": 2530,
+                  "observedDomContentLoadedTs": 237309115,
                   "observedCumulativeLayoutShift": 0.0023296746148003472,
                   "observedCumulativeLayoutShiftMainFrame": 0.0023296746148003472,
                   "observedTotalCumulativeLayoutShift": 0.0023296746148003472,
-                  "observedFirstVisualChange": 2678,
-                  "observedFirstVisualChangeTs": 129944303,
-                  "observedLastVisualChange": 3561,
-                  "observedLastVisualChangeTs": 130827303,
-                  "observedSpeedIndex": 3360,
-                  "observedSpeedIndexTs": 130626775
+                  "observedFirstVisualChange": 2461,
+                  "observedFirstVisualChangeTs": 237239914,
+                  "observedLastVisualChange": 3311,
+                  "observedLastVisualChangeTs": 238089914,
+                  "observedSpeedIndex": 3119,
+                  "observedSpeedIndexTs": 237897484
                 },
                 {
                   "lcpInvalidated": false
@@ -1442,22 +1424,22 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 55,
+                  "numRequests": 57,
                   "numScripts": 8,
                   "numStylesheets": 2,
                   "numFonts": 4,
-                  "numTasks": 1051,
-                  "numTasksOver10ms": 20,
-                  "numTasksOver25ms": 14,
-                  "numTasksOver50ms": 8,
-                  "numTasksOver100ms": 3,
+                  "numTasks": 1281,
+                  "numTasksOver10ms": 10,
+                  "numTasksOver25ms": 4,
+                  "numTasksOver50ms": 2,
+                  "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.625,
-                  "throughput": 16705934.50213177,
-                  "maxRtt": 110.26599999999999,
-                  "maxServerLatency": 13.600999999999999,
-                  "totalByteWeight": 1460414,
-                  "totalTaskTime": 1324.537000000006,
+                  "rtt": 5.009,
+                  "throughput": 21485550.355383366,
+                  "maxRtt": 91.539,
+                  "maxServerLatency": 13.351000000000013,
+                  "totalByteWeight": 1460983,
+                  "totalTaskTime": 482.1219999999969,
                   "mainDocumentTransferSize": 15543
                 }
               ]
@@ -1484,7 +1466,7 @@
     },
     "declaration-a11y": {
       "mention": "Accessibilité : non conforme",
-      "declarationUrl": "https://www.ain.gouv.fr/index.php/accessibilite"
+      "declarationUrl": "https://ain.gouv.fr/index.php/accessibilite"
     },
     "declaration-rgpd": [
       {
@@ -1496,7 +1478,7 @@
           "éditeur (ou) édité par (ou) editeur (ou) edité par"
         ],
         "missingTrackers": [],
-        "declarationUrl": "https://www.ain.gouv.fr/index.php/mentions-legales"
+        "declarationUrl": "https://ain.gouv.fr/index.php/mentions-legales"
       },
       {
         "slug": "pc",
@@ -1508,7 +1490,7 @@
           "sous-traitants (ou) sous traitants"
         ],
         "missingTrackers": [],
-        "declarationUrl": "https://www.ain.gouv.fr/index.php/donnees-personnelles-et-cookies"
+        "declarationUrl": "https://ain.gouv.fr/index.php/donnees-personnelles-et-cookies"
       }
     ],
     "betagouv": null,
@@ -1523,12 +1505,12 @@
       "testsslExpireSoon": false,
       "testsslExpireDate": "2024-04-19T21:59:00.000Z",
       "testsslGrade": "A",
-      "lighthouse_performance": 0.6714481353759766,
-      "lighthouse_performanceGrade": "B",
+      "lighthouse_performance": 0.5713396072387695,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 1,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 0.92,
-      "lighthouse_best-practicesGrade": "A",
+      "lighthouse_best-practices": 0.83,
+      "lighthouse_best-practicesGrade": "B",
       "lighthouse_seo": 1,
       "lighthouse_seoGrade": "A",
       "lighthouse_pwa": 0.6,
