@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Mar  9 12:21:25 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln cyber.gouv.fr
+Host: 193.70.123.152 (ip152.ip-193-70-123.eu)	Status: Up
+Host: 193.70.123.152 (ip152.ip-193-70-123.eu)	Ports: 80/open/tcp//http//Apache httpd/, 443/open/tcp//ssl|http//Apache httpd/	Ignored State: filtered (998)
+# Nmap done at Sat Mar  9 12:21:54 2024 -- 1 IP address (1 host up) scanned in 28.57 seconds

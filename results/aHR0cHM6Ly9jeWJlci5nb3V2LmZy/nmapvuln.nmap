@@ -1,0 +1,13 @@
+# Nmap 7.92 scan initiated Sat Mar  9 12:21:25 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln cyber.gouv.fr
+Nmap scan report for cyber.gouv.fr (193.70.123.152)
+Host is up (0.15s latency).
+rDNS record for 193.70.123.152: ip152.ip-193-70-123.eu
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache httpd
+|_http-server-header: Apache
+443/tcp open  ssl/http Apache httpd
+|_http-server-header: Apache
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar  9 12:21:54 2024 -- 1 IP address (1 host up) scanned in 28.57 seconds
