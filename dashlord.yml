@@ -24,4 +24,43 @@ tools:
   budget_page: true
   betagouv: true
 urls:
-  - url: http://policenationale.ddev.site
+  - url: 1jeune1solution.gouv.fr
+  - url: 52histoires2021.ademe.fr
+  - url: academie-renseignement.gouv.fr
+  - url: adaptation-changement-climatique.gouv.fr
+  - url: aft.gouv.fr
+  - url: agence-cohesion-territoires.gouv.fr
+  - url: agence-francaise-anticorruption.gouv.fr
+  - url: agentconnect.gouv.fr
+  - url: agriculture.gouv.fr
+  - url: ain.gouv.fr
+  - url: aisne.gouv.fr
+  - url: alim-confiance.gouv.fr
+  - url: allier.gouv.fr
+  - url: alerte-enlevement.gouv.fr
+  - url: alpes-de-haute-provence.gouv.fr
+  - url: alpes-maritimes.gouv.fr
+  - url: alternance.emploi.gouv.fr
+  - url: amenagement-numerique.gouv.fr
+  - url: amendes.gouv.fr
+  - url: anah.gouv.fr
+  - url: Anc.gouv.fr
+  - url: anlci.gouv.fr
+  - url: ants.gouv.fr
+  - url: api.gouv.fr
+  - url: ardeche.gouv.fr
+  - url: ardennes.gouv.fr
+  - url: ariege.gouv.fr
+  - url: arpe.gouv.fr
+  - url: arretonslesviolences.gouv.fr
+  - url: associations.gouv.fr
+  - url: aube.gouv.fr
+  - url: aude.gouv.fr
+  - url: france-services.gouv.fr
+  - url: autoecole.ants.gouv.fr
+  - url: autoecoles.securite-routiere.gouv.fr
+  - url: aveyron.gouv.fr
+  - url: base-donnees-publique.medicaments.gouv.fr
+  - url: bas-rhin.gouv.fr
+  - url: beta.gouv.fr
+  - url: biodiversite.gouv.fr
